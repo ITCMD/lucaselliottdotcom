@@ -1,7 +1,7 @@
 # ─────────────────────────────────────────────────────────────
 #  Site config. Most of what you'll edit day-to-day is [params].
 # ─────────────────────────────────────────────────────────────
-baseURL = "https://lucaselliott.com/"
+baseURL = "https://lucas-elliott.com/"
 locale = "en-us"
 title = "Lucas Elliott"
 
