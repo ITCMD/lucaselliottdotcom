@@ -13,7 +13,7 @@ disableKinds = ["taxonomy", "term"]
   name        = "Lucas Elliott"
   tagline     = "Short one-liner about you"
   description = "Personal site of Lucas Elliott."   # used for SEO / social meta
-  photo       = "/images/photo.svg"                  # drop your real photo in static/images/
+  photo       = "/images/profile-pic.png"            # your photo in static/images/
   resume      = "https://example.com/resume"         # just a link — Google Doc, hosted PDF, LinkedIn, etc.
 
   # Links shown under your bio. Add/remove freely.

@@ -17,3 +17,22 @@
 <meta property="og:url" content="{{ site.BaseURL }}">
 {{- with site.Params.photo }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
 <meta name="twitter:card" content="summary">
+
+<!-- Pick a random deep glow for the background, once per page load.
+     Inline + first-thing so it applies before the page paints (no flash). -->
+<script>
+(function () {
+  var palettes = [
+    ["#1f8a45", "#05210f"], // deep green
+    ["#0fa07e", "#04231e"], // deep teal-green
+    ["#0e8bab", "#04222b"], // deep teal-blue
+    ["#2f6bff", "#050f2b"], // deep blue
+    ["#ff2d8e", "#2a0517"], // hot pink glow
+    ["#c79363", "#2a1c10"]  // light wood
+  ];
+  var p = palettes[Math.floor(Math.random() * palettes.length)];
+  var s = document.documentElement.style;
+  s.setProperty("--glow", p[0]);
+  s.setProperty("--glow-deep", p[1]);
+})();
+</script>
