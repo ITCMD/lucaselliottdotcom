@@ -1,11 +1,11 @@
 ---
 title: "Home"
 ---
-Hi, I'm Lucas. You've reached my public page, which is primarily a landing zone for potential employers. Below, you can read a bit about me and find my socials. To the right, you'll see me showing off some recent projects of mine!
+Hi, I'm Lucas. You've reached my public page, which is primarily a landing zone for potential employers. Below, you can read a bit about me and find the important links. To the right, you'll see me showing off some recent projects of mine!
 ## About Me
-I've got the nickname "Hardware Grasshopper" (or just "Grasshopper, for short) because in my personal life, I'm always trying new tech hardware, apps, services, protocols, and infra. I love trying new things and learning!
+I've got the nickname "Hardware Grasshopper" (or just "Grasshopper," for short) because in my personal life, I'm always trying new tech hardware, apps, services, protocols, and infra. I love trying new things and learning!
 
-This has given me a compliment of experiences and skills that works well in my professional career (where you'll find I'm a bit more hesitant to hop right to the "next thing" but still willing to embrace change and improvements).
+This has given me a complement of experiences and skills that works well in my professional career (in which you'll find I'm a bit more hesitant to hop right to the "next thing" but still willing to embrace change and improvements).
 
 I've worked in IT for more than 10 years, and I've worked with communications equipment for 3 years now.
 
@@ -17,4 +17,4 @@ I'm also a husband to a beautiful wife, a dad to a wonderful daughter, and a ser
 - [Modular Communications, where I work as a Radio Technician II & Linux Sysadmin](https://modularcommunications.com)
 - [Hope Chapel, the church I go to](https://hopechapelsterling.org)
 
-Thanks for visiting!
+## Thanks for visiting!
