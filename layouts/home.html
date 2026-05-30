@@ -15,7 +15,9 @@
 
     <div class="actions">
       {{ with site.Params.resume }}
-        <a class="btn" href="{{ . }}"{{ if hasPrefix . "http" }} target="_blank" rel="noopener"{{ end }}>Résumé</a>
+        {{ $href := . }}
+        {{ if not (hasPrefix . "http") }}{{ with resources.Get . }}{{ $href = .RelPermalink }}{{ end }}{{ end }}
+        <a class="btn" href="{{ $href }}" target="_blank" rel="noopener">Résumé</a>
       {{ end }}
       {{ range site.Params.social }}
         <a class="social" href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>

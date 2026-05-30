@@ -11,18 +11,18 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   name        = "Lucas Elliott"
-  tagline     = "Short one-liner about you"
+  tagline     = "IT Sysadmin & Comms Technician"
   description = "Personal site of Lucas Elliott."   # used for SEO / social meta
   photo       = "images/profile-pic.png"             # your photo in static/images/ (no leading slash → relURL prefixes correctly)
-  resume      = "https://example.com/resume"         # just a link — Google Doc, hosted PDF, LinkedIn, etc.
+  resume      = "resume.pdf"                          # file in assets/ — published via the resource pipeline (or use a full https URL)
 
   # Links shown under your bio. Add/remove freely.
   [[params.social]]
     name = "GitHub"
-    url  = "https://github.com/yourusername"
+    url  = "https://github.com/ITCMD"
   [[params.social]]
     name = "Email"
-    url  = "mailto:lukakamaps@gmail.com"
+    url  = "mailto:yournexthire@lucas-elliott.com"
 
 # Cache fetched OG images/HTML so rebuilds are fast.
 [caches]
