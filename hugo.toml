@@ -1,0 +1,34 @@
+# ─────────────────────────────────────────────────────────────
+#  Site config. Most of what you'll edit day-to-day is [params].
+# ─────────────────────────────────────────────────────────────
+baseURL = "https://lucaselliott.com/"
+locale = "en-us"
+title = "Lucas Elliott"
+
+# We only need the home page + the projects list — no per-project pages,
+# tags, or categories. This keeps the build clean and output minimal.
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  name        = "Lucas Elliott"
+  tagline     = "Short one-liner about you"
+  description = "Personal site of Lucas Elliott."   # used for SEO / social meta
+  photo       = "/images/photo.svg"                  # drop your real photo in static/images/
+  resume      = "https://example.com/resume"         # just a link — Google Doc, hosted PDF, LinkedIn, etc.
+
+  # Links shown under your bio. Add/remove freely.
+  [[params.social]]
+    name = "GitHub"
+    url  = "https://github.com/yourusername"
+  [[params.social]]
+    name = "Email"
+    url  = "mailto:lukakamaps@gmail.com"
+
+# Cache fetched OG images/HTML so rebuilds are fast.
+[caches]
+  [caches.getresource]
+    maxAge = "168h"   # 1 week
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true   # allow raw HTML in your Markdown bio if you want it

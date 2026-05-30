@@ -1,0 +1,13 @@
+# Hugo build output (Cloudflare rebuilds this)
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Obsidian noise (per-machine UI state — no need to sync/deploy)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+{{- $img := partial "og-image.html" . -}}
+{{- $href := .Params.link | default .RelPermalink -}}
+{{- $external := hasPrefix $href "http" -}}
+<a class="card" href="{{ $href }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>
+  <div class="card-img" style="background-image:url('{{ $img }}')" role="img" aria-label="{{ .Title }} preview"></div>
+  <div class="card-body">
+    <h3>{{ .Title }}{{ if $external }} <span class="ext" aria-hidden="true">↗</span>{{ end }}</h3>
+    <div class="card-blurb">{{ .Content }}</div>
+  </div>
+</a>

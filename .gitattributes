@@ -1,0 +1,14 @@
+# Normalize line endings: store LF in the repo, check out native on Windows.
+# Keeps the Linux Cloudflare build and Windows edits in sync.
+* text=auto eol=lf
+
+# Binary assets — never touch.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary

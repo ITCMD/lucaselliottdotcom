@@ -1,0 +1,44 @@
+{{/*
+  og-image.html — resolve a project's preview image. Returns a URL string.
+
+  Priority:
+    1. Explicit `image:` in front matter
+         - "http..."        → used as-is
+         - "covers/foo.jpg" → looked up in assets/
+    2. `link:` set but no image → fetch the page at build time and scrape
+       its og:image / twitter:image meta tag, then localize the image.
+    3. Nothing usable → /images/placeholder.svg
+
+  All fetching happens during `hugo build`, so the output stays 100% static.
+  Any network/parse failure falls through to the placeholder — never fails the build.
+*/}}
+{{- $img := "" -}}
+
+{{- with .Params.image -}}
+  {{- if hasPrefix . "http" -}}
+    {{- $img = . -}}
+  {{- else -}}
+    {{- with resources.Get . }}{{ $img = .RelPermalink }}{{ end -}}
+  {{- end -}}
+{{- else -}}
+  {{- with .Params.link -}}
+    {{- with (try (resources.GetRemote .)).Value -}}
+      {{- $html := .Content -}}
+      {{- $metas := findRE `(?is)<meta[^>]*?(?:og:image|twitter:image)[^>]*?>` $html 1 -}}
+      {{- with index $metas 0 -}}
+        {{- $url := replaceRE `(?is).*?content=["']([^"']+)["'].*` "$1" . -}}
+        {{- if hasPrefix $url "//" }}{{ $url = printf "https:%s" $url }}{{ end -}}
+        {{- if hasPrefix $url "http" -}}
+          {{- with (try (resources.GetRemote $url)).Value -}}
+            {{- $img = .RelPermalink -}}
+          {{- else -}}
+            {{- $img = $url -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $img }}{{ $img = "/images/placeholder.svg" }}{{ end -}}
+{{- return $img -}}

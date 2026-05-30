@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="layout">
+
+  <!-- LEFT: who you are -->
+  <section class="profile">
+    {{ with site.Params.photo }}
+      <img class="avatar" src="{{ . }}" alt="{{ site.Params.name }}" width="160" height="160">
+    {{ end }}
+    <h1 class="name">{{ site.Params.name }}</h1>
+    {{ with site.Params.tagline }}<p class="tagline">{{ . }}</p>{{ end }}
+
+    <div class="bio">
+      {{ .Content }}
+    </div>
+
+    <div class="actions">
+      {{ with site.Params.resume }}
+        <a class="btn" href="{{ . }}"{{ if hasPrefix . "http" }} target="_blank" rel="noopener"{{ end }}>Résumé</a>
+      {{ end }}
+      {{ range site.Params.social }}
+        <a class="social" href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- RIGHT (bottom on mobile): recent projects -->
+  <aside class="projects">
+    <h2>Recent projects</h2>
+    {{ with site.GetPage "/projects" }}
+      {{ range .RegularPages.ByWeight }}
+        {{ partial "project-card.html" . }}
+      {{ else }}
+        <p class="muted">No projects yet — add Markdown files under <code>content/projects/</code>.</p>
+      {{ end }}
+    {{ end }}
+  </aside>
+
+</div>
+{{ end }}

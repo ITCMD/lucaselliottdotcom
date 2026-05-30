@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.Title }}</title>
+<meta name="description" content="{{ site.Params.description }}">
+
+{{- with resources.Get "css/main.css" }}
+  {{- $css := . | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- end }}
+
+{{- with site.Params.photo }}<link rel="icon" href="{{ . }}">{{ end }}
+
+<!-- Social / OG meta for *your* site's own preview -->
+<meta property="og:title" content="{{ site.Title }}">
+<meta property="og:description" content="{{ site.Params.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.BaseURL }}">
+{{- with site.Params.photo }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+<meta name="twitter:card" content="summary">
