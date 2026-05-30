@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{- end }}
 
-{{- with site.Params.photo }}<link rel="icon" href="{{ . }}">{{ end }}
+{{- with site.Params.photo }}<link rel="icon" href="{{ . | relURL }}">{{ end }}
 
 <!-- Social / OG meta for *your* site's own preview -->
 <meta property="og:title" content="{{ site.Title }}">

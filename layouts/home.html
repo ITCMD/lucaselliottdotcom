@@ -4,7 +4,7 @@
   <!-- LEFT: who you are -->
   <section class="profile">
     {{ with site.Params.photo }}
-      <img class="avatar" src="{{ . }}" alt="{{ site.Params.name }}" width="160" height="160">
+      <img class="avatar" src="{{ . | relURL }}" alt="{{ site.Params.name }}" width="160" height="160">
     {{ end }}
     <h1 class="name">{{ site.Params.name }}</h1>
     {{ with site.Params.tagline }}<p class="tagline">{{ . }}</p>{{ end }}

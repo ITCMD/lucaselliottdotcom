@@ -40,5 +40,5 @@
   {{- end -}}
 {{- end -}}
 
-{{- if not $img }}{{ $img = "/images/placeholder.svg" }}{{ end -}}
+{{- if not $img }}{{ $img = "images/placeholder.svg" | relURL }}{{ end -}}
 {{- return $img -}}
