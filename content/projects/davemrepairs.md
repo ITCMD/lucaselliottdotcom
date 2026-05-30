@@ -1,6 +1,6 @@
 ---
 title: "Dave M Repairs"
-weight: 7
+weight: 1
 link: "https://davemrepairs.com/"
 image: "covers/davemrepairs.png"
 ---

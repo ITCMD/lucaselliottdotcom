@@ -1,6 +1,6 @@
 ---
 title: "DEFCON Level"
-weight: 6
+weight: 2
 link: "https://github.com/ITCMD/defcon-level"
 image: "https://i.imgur.com/EjNVdGJ.png"
 ---

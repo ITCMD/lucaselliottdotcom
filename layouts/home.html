@@ -34,7 +34,7 @@
   <aside class="projects">
     <h2>Recent projects</h2>
     {{ with site.GetPage "/projects" }}
-      {{ range .RegularPages.ByWeight }}
+      {{ range .RegularPages.ByWeight.Reverse }}
         {{ partial "project-card.html" . }}
       {{ else }}
         <p class="muted">No projects yet — add Markdown files under <code>content/projects/</code>.</p>

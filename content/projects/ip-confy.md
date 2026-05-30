@@ -1,6 +1,6 @@
 ---
 title: "IP-CONFY"
-weight: 5
+weight: 3
 link: "https://github.com/ITCMD/IP-CONFY"
 image: ""
 ---

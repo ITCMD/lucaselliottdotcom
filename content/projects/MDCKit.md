@@ -1,6 +1,6 @@
 ---
 title: MDCKIT - MDC Encoder/Decoder
-weight: 1
+weight: 7
 link: https://mdckit.com
 ---
 

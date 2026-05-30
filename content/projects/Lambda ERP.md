@@ -1,6 +1,6 @@
 ---
 title: I was sick of the options
-weight: 2
+weight: 6
 link: https://lambdaerp.com
 image: https://lambdaerp.com/assets/screenshot-tools.png
 ---
