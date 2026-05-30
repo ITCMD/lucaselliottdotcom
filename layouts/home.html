@@ -19,6 +19,11 @@
         {{ if not (hasPrefix . "http") }}{{ with resources.Get . }}{{ $href = .RelPermalink }}{{ end }}{{ end }}
         <a class="btn" href="{{ $href }}" target="_blank" rel="noopener">Résumé</a>
       {{ end }}
+      {{ with site.Params.references }}
+        {{ $href := . }}
+        {{ if not (hasPrefix . "http") }}{{ with resources.Get . }}{{ $href = .RelPermalink }}{{ end }}{{ end }}
+        <a class="btn" href="{{ $href }}" target="_blank" rel="noopener">References</a>
+      {{ end }}
       {{ range site.Params.social }}
         <a class="social" href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
       {{ end }}

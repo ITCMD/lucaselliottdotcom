@@ -15,6 +15,7 @@ disableKinds = ["taxonomy", "term"]
   description = "Personal site of Lucas Elliott."   # used for SEO / social meta
   photo       = "images/profile-pic.png"             # your photo in static/images/ (no leading slash → relURL prefixes correctly)
   resume      = "Resume - Lucas Elliott - 5-29-26.pdf"   # file in assets/ — published via the resource pipeline (or use a full https URL)
+  references  = "References - Redacted.pdf"               # file in assets/ — same pipeline rules as resume
 
   # Links shown under your bio. Add/remove freely.
   [[params.social]]
