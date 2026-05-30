@@ -1,5 +1,5 @@
 ---
-title: MDCKIT - MDC Encoder/Decoder
+title: Let the People Flash!
 weight: 7
 link: https://flash.bigtimeradio.us
 image: covers/flasher.jpg
