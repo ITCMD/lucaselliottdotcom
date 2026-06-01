@@ -11,7 +11,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   name        = "Lucas Elliott"
-  tagline     = "IT Sysadmin & Comms Technician"
+  tagline     = "IT System Admin & Comms Journeyman CET"
   description = "Personal site of Lucas Elliott."   # used for SEO / social meta
   photo       = "images/profile-pic.png"             # your photo in static/images/ (no leading slash → relURL prefixes correctly)
   resume      = "Resume - Lucas Elliott - 5-29-26.pdf"   # file in assets/ — published via the resource pipeline (or use a full https URL)
