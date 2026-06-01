@@ -1,15 +1,13 @@
 ---
 title: "Home"
 ---
-Hi, I'm Lucas. You've reached my public page, which is primarily a landing zone for potential employers. Below, you can read a bit about me and find the important links. To the right, you'll see me showing off some recent projects of mine!
+Hi, I'm Lucas. You've reached my public page, which is primarily a landing zone for potential employers. Below, you can read a bit about me and find the important links. I also made myself a companion app for this website so I can quickly post projects I'm working on.
 ## About Me
-I've got the nickname "Hardware Grasshopper" (or just "Grasshopper," for short) because in my personal life, I'm always trying new tech hardware, apps, services, protocols, and infra. I love trying new things and learning!
+I've been involved in technology for as long as I can remember. It's always interested me. My friends jokingly call me the "Hardware Grasshopper" because I'm always "hopping" from thing to thing, trading and upgrading machines, software, and radios (as I do Amateur radio as a hobby). This habit in my personal life naturally compliments and enhances my professional life, where I'm able to quickly take on new systems, protocols, and procedures.
 
-This has given me a complement of experiences and skills that works well in my professional career (in which you'll find I'm a bit more hesitant to hop right to the "next thing" but still willing to embrace change and improvements).
+Speaking of my professional life, I've worked in IT professionally for more than 10 years, ranging from a small startup IT company that grew beyond what I originally planned, to an IT company supporting bioscience and manufacturing companies, to now where in addition to working as a Communications Technician, I'm also the Linux Systems Administrator managing a connected system of servers and monitoring across three states, while also spearheading our internal tools, documentation, and IT Training.
 
-I've worked in IT for more than 10 years, and I've worked with communications equipment for 3 years now.
-
-I'm also a husband to a beautiful wife, a dad to a wonderful daughter, and a servant to a wonderful God.
+I'm also a husband to a beautiful wife, a dad to a wonderful daughter.
 # Some Links I'd Love for You to Check Out
 - [My IT and website business, IT Command](https://itcommand.net)
 - [My ham radio YouTube channel, Big Time Radio](https://youtube.com/@w1btr)
