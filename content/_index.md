@@ -1,7 +1,7 @@
 ---
 title: "Home"
 ---
-Hi, I'm Lucas. You've reached my public page, which is primarily a landing zone for potential employers. Below, you can read a bit about me and find the important links. I also made myself a companion app for this website so I can quickly post projects I'm working on.
+Hi, I'm Lucas. You've reached my public page. Below, you can read a bit about me and find the important links. I also made myself a companion app for this website so I can quickly post projects I'm working on.
 ## About Me
 I've been involved in technology for as long as I can remember. It's always interested me. My friends jokingly call me the "Hardware Grasshopper" because I'm always "hopping" from thing to thing, trading and upgrading machines, software, and radios (as I do Amateur radio as a hobby). This habit in my personal life naturally compliments and enhances my professional life, where I'm able to quickly take on new systems, protocols, and procedures.
 
